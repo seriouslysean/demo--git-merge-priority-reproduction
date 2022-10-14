@@ -17,6 +17,9 @@ Explanation, reproduction + resolution of a version mismatch.
     - [There is a conflict of the project version but not the package version](#hotfix011-merge-conflict)
     - The `1.9.8` update is skipped because the change is now older
     - [sha](https://github.com/seriouslysean/reproduction-git-merge-priority/commit/6d45af50f10d9511ffa941fe097f14d6976f4a2d)
+    - @dgautsch recommended trying `--no-ff` for this step
+        - Same result
+        - [sha](https://github.com/seriouslysean/reproduction-git-merge-priority/commit/bf7f1291e3cf235904ade25afbb8fb5c5a88a9c6)
 7. `release/0.2.0` is downmerged to `main`
     - The merge is successful
     - The "bad" version is kept because it is technically newer than the previous revert
