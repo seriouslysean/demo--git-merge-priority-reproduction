@@ -7,10 +7,10 @@
     "url": "https://github.com/seriouslysean/reproduction-git-merge-priority/issues"
   },
   "dependencies": {
-    "dayjs": "^1.9.8"
+    "dayjs": "1.9.8"
   },
   "devDependencies": {
-    "vitest": "^0.24.1"
+    "vitest": "0.24.1"
   },
   "homepage": "https://github.com/seriouslysean/reproduction-git-merge-priority#readme",
   "license": "MIT",

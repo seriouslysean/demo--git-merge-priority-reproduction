@@ -1,5 +1,5 @@
-import { isItHalloween } from './utils';
+import { isHalloween } from './utils.js';
 
-console.log(`Is it Halloween? ${isIsHalloween() ? 'YES!' : 'NO!'}`);
+console.log(`Is it Halloween? ${isHalloween() ? 'YES!' : 'NO!'}`);
 
 process.exit(0);
