@@ -17,7 +17,7 @@ Explanation, reproduction + resolution of a version mismatch.
     - [There is a conflict of the project version but not the package version](#hotfix011-merge-conflict)
     - The `1.9.8` update is skipped because the change is now older
     - [sha](https://github.com/seriouslysean/reproduction-git-merge-priority/commit/6d45af50f10d9511ffa941fe097f14d6976f4a2d)
-    - @dgautsch recommended trying `--no-ff` for this step
+    - [@dgautsch](https://github.com/dgautsch) recommended trying `--no-ff` for this step
         - Same result
         - [sha](https://github.com/seriouslysean/reproduction-git-merge-priority/commit/bf7f1291e3cf235904ade25afbb8fb5c5a88a9c6)
 7. `release/0.2.0` is downmerged to `main`
@@ -28,6 +28,8 @@ Explanation, reproduction + resolution of a version mismatch.
     [main] » git merge release/0.2.0
     Merge made by the 'ort' strategy.
     ```
+
+The end result is that even though the revert commit was newer, there was no actual change to revert. The "bad" version changed the "latest" version in the release PR, thereby taking precedence over the revert's operation. The best way to combat this sort of discrepency in the future is to double check any package version changes between releases prior to a deployment as an additional preflight check.
 ## Build & Run
 
 1. `npm ci` to install deps
