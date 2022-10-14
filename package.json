@@ -1,0 +1,28 @@
+{
+  "name": "reproduction-git-merge-priority",
+  "description": "Explanation, reproduction + resolution of a version mismatch.",
+  "version": "0.1.0",
+  "author": "Sean Kennedy",
+  "bugs": {
+    "url": "https://github.com/seriouslysean/reproduction-git-merge-priority/issues"
+  },
+  "dependencies": {
+    "dayjs": "^1.9.8"
+  },
+  "devDependencies": {
+    "vitest": "^0.24.1"
+  },
+  "homepage": "https://github.com/seriouslysean/reproduction-git-merge-priority#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seriouslysean/reproduction-git-merge-priority.git"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "type": "module"
+}
