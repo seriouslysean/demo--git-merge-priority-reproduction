@@ -1,7 +1,7 @@
 {
   "name": "reproduction-git-merge-priority",
   "description": "Explanation, reproduction + resolution of a version mismatch.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Sean Kennedy",
   "bugs": {
     "url": "https://github.com/seriouslysean/reproduction-git-merge-priority/issues"
